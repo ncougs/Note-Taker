@@ -6,5 +6,17 @@
     {
         "title": "Test 2",
         "text": "Test 2"
+    },
+    {
+        "title": "Note 1",
+        "text": "Woah, this note is pretty cool"
+    },
+    {
+        "title": "Newest Note",
+        "text": "Here is my new super cool note"
+    },
+    {
+        "title": "Check this out",
+        "text": "Here is my newest note"
     }
 ]
