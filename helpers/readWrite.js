@@ -25,9 +25,9 @@ const appendDataFile = (newData,location) => {
         .catch(error => console.error(error));
 };
 
-module.exports = {readFile, writeFile, appendDataFile};
+module.exports = { readFile, appendDataFile };
 
-appendDataFile({
-    "title":"Test 2",
-    "text":"Test 2"
-},'./db/db.json');
+// appendDataFile({
+//     "title":"Test 2",
+//     "text":"Test 2"
+// },'./db/db.json');
