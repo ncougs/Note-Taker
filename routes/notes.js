@@ -1,6 +1,7 @@
 //files requried
 const { readFile, appendDataFile } = require('../helpers/readWrite');
 const notes = require('express').Router();
+const newID = require('../helpers/getID');
 
 const dbLocation = './db/db.json';
 
@@ -22,7 +23,8 @@ notes.post('/', (req, res) => {
         //define a new note
         const newNote = {
             "title": title,
-            "text": text
+            "text": text,
+            "id": newID()
         };
 
         //append to datafile
