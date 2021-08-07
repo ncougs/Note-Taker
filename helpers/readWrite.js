@@ -26,8 +26,3 @@ const appendDataFile = (newData,location) => {
 };
 
 module.exports = { readFile, appendDataFile, writeFile };
-
-// appendDataFile({
-//     "title":"Test 2",
-//     "text":"Test 2"
-// },'./db/db.json');
