@@ -1,27 +1,7 @@
 [
     {
-        "title": "Here is my new note",
-        "text": "Please don't delete me",
-        "id": 10
-    },
-    {
-        "title": "Go Away, please don't delete",
-        "text": "Not now, not ever, not evere ver",
-        "id": 11
-    },
-    {
-        "title": "one",
-        "text": "Two there four",
-        "id": 12
-    },
-    {
-        "title": "Four five siz",
-        "text": "Seven eight nine",
-        "id": 13
-    },
-    {
-        "title": "One more just for testing",
-        "text": "Here you go",
-        "id": 14
+        "title": "Starting Note",
+        "text": "Welcome to my note-taker application, I hope you enjoy!",
+        "id": 1
     }
 ]
