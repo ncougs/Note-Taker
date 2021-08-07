@@ -68,5 +68,29 @@ notes.delete('/:id', (req, res) => {
 
 });
 
+notes.get('/:id', (req, res) => {
+
+    //get id out of req.params
+    const index = req.params.id;
+
+    //read curent database
+    const db = JSON.parse(fs.readFileSync(dbLocation, 'utf8'));
+
+    //check if id exists in database
+    if (db.some(obj => obj.id == index)) {
+        //filter DB by the ID
+        const selectedID = db.filter( ({ id }) => id == index);
+   
+        //send back response
+        res.json(selectedID);
+        
+    }
+    //IF NOT send back error response
+    else {
+        res.send(`${index} is not a valid id`);
+    };
+
+});
+
 //export notes route;
 module.exports = notes;
